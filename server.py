@@ -11,7 +11,7 @@ def hello():
     startpos = (content["startpos"]["lat"], content["startpos"]["lng"])
     endpos = (content["endpos"]["lat"], content["endpos"]["lng"])
     positions = content["positions"]
-    print startpos, endpos, positions
+    print (startpos, endpos, positions)
 
     obstacles = [(p[0], p[1]) for p in positions]
     #obstacles = []
@@ -19,7 +19,7 @@ def hello():
     radius = 0.01
     stepSize = 0.005
 
-    print obstacles
+    print (obstacles)
 
     G = RRT_star(startpos, endpos, obstacles, n_iter, radius, stepSize)
 
