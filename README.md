@@ -33,9 +33,6 @@ $ export FLASK_APP=server.py
 $ python -m flask run
 ```
 
-##  Test case
-TODO
-
 
 ## What it works
 We harvested crime data from [DataLa](https://data.lacity.org/) and considered them in the path finding. Using Python and Java script we parted LA in little squares and assigned danger levels to each. Then a RRT should find the best path from the start to the goal avoiding areas with a high crime rate.
